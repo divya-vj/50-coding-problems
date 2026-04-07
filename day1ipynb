@@ -1,0 +1,714 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOYnphUyEk+4zb7pvKlugJt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/divya-vj/50-coding-problems/blob/main/day1ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "35K6nNokMIJg",
+        "outputId": "ef9d20d7-e3a6-4b99-d2fa-6ff459cdf6cf"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "divya\n",
+            "21\n",
+            "8.5\n",
+            "False\n",
+            "<class 'str'>\n",
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'bool'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "#variables\n",
+        "\n",
+        "name=\"divya\"\n",
+        "age=21\n",
+        "cgpa=8.5\n",
+        "is_placed=False\n",
+        "\n",
+        "print(name)\n",
+        "print(age)\n",
+        "print(cgpa)\n",
+        "print(is_placed)\n",
+        "\n",
+        "print(type(name))\n",
+        "print(type(age))\n",
+        "print(type(cgpa))\n",
+        "print(type(is_placed))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "stud_age=25\n",
+        "stud_age=30\n",
+        "Stud_age=35\n",
+        "print(stud_age)\n",
+        "print(Stud_age)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q9uHU0wcOC6N",
+        "outputId": "2b153132-f1c4-4c42-eee4-363cea914ae4"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n",
+            "35\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#multiple assingment\n",
+        "x=y=z=0\n",
+        "print(x)\n",
+        "print(y)\n",
+        "print(z)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qG_O2fy_PT7j",
+        "outputId": "7c157fb5-ee5a-462f-9412-e8f3a14d7f1b"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "0\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a,b,c=10,20,30\n",
+        "print(a)\n",
+        "print(b)\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kTtoBhAGP9Ei",
+        "outputId": "339e134d-bef3-4c6b-d09b-a13d578c863c"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "20\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=5\n",
+        "b=10\n",
+        "print(\"before swap:\")\n",
+        "print(a,b)\n",
+        "\n",
+        "a,b=b,a\n",
+        "print(\"after swap:\")\n",
+        "print(a,b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ysVXSZnVQaPD",
+        "outputId": "b6c710e0-3bad-40ce-a815-24f91b707c3a"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "before swap:\n",
+            "5 10\n",
+            "after swap:\n",
+            "10 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "2var=10"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 110
+        },
+        "id": "UgDt4571QzOm",
+        "outputId": "4ab0235f-d6de-4d68-d66b-4f0bfb9652d5"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid decimal literal (3504626852.py, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_7368/3504626852.py\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    2var=10\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid decimal literal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my-name=\"div\""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 110
+        },
+        "id": "MAJ65DhoRMHj",
+        "outputId": "0463a5cd-373e-4ce3-d6b9-1564c3e3d64f"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "cannot assign to expression here. Maybe you meant '==' instead of '='? (1348260763.py, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_7368/1348260763.py\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    my-name=\"div\"\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m cannot assign to expression here. Maybe you meant '==' instead of '='?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for=10"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 110
+        },
+        "id": "4vasg_eWRXG6",
+        "outputId": "920a8c6a-07bd-453f-e885-e6ae112db641"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (4258171486.py, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_7368/4258171486.py\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    for=10\u001b[0m\n\u001b[0m       ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_name=\"div\"\n",
+        "_name=\"div\"\n",
+        "name1=\"div\"\n",
+        "myName=\"div\"\n",
+        "print(my_name)\n",
+        "print(_name)\n",
+        "print(name1)\n",
+        "print(myName)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Of760LwWRklQ",
+        "outputId": "c973ad77-b7dc-4e05-e9e7-40c842e77d69"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "div\n",
+            "div\n",
+            "div\n",
+            "div\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#data types\n",
+        "\n",
+        "age = 21\n",
+        "price = 8.5\n",
+        "name = \"Divya\"\n",
+        "is_placed = True\n",
+        "\n",
+        "print(type(age))\n",
+        "print(type(price))\n",
+        "print(type(name))\n",
+        "print(type(is_placed))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IPfltwULSCoD",
+        "outputId": "aa10ae54-ae4e-45e7-8abe-7c27742f2423"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'str'>\n",
+            "<class 'bool'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result = 10 / 2\n",
+        "print(result)\n",
+        "print(type(result))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "05gIdJZ2TRkD",
+        "outputId": "62e53ffc-bacd-4287-d9fc-e3cd7381f3f0"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5.0\n",
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result2 = 10 // 2\n",
+        "print(result2)\n",
+        "print(type(result2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pkPVyyk8TZ53",
+        "outputId": "39fe1efa-1844-4665-dae0-95a21512ad77"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(0.1 + 0.2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aOLMvGxhTp8n",
+        "outputId": "414ab95a-9fea-4ef3-9477-44e6e70f775b"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0.30000000000000004\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Divya\"\n",
+        "print(name[0])\n",
+        "print(name[1])\n",
+        "print(name[-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XkeVOB9FT19S",
+        "outputId": "adced35e-3954-475e-b58b-6541c9270630"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "D\n",
+            "i\n",
+            "a\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Divya\"\n",
+        "name[0] = \"d\""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 165
+        },
+        "id": "oe0MZxubUFhk",
+        "outputId": "71309ff7-e900-4726-b6b5-a86c3118dfbb"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "'str' object does not support item assignment",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_7368/1112285418.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mname\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m\"Divya\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mname\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m\"d\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'str' object does not support item assignment"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(True + True)\n",
+        "print(True + False)\n",
+        "print(True * 5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eU6zJr5YUTyC",
+        "outputId": "7407b5cf-6af0-47d7-e9d4-42d4f6189150"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "1\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#INPUT / OUTPUT\n",
+        "\n",
+        "# Basic print\n",
+        "print(\"Hello\")                    # Hello\n",
+        "\n",
+        "# Print multiple values — separated by space by default\n",
+        "print(\"Hello\", \"Divya\")           # Hello Divya\n",
+        "\n",
+        "# Change separator using sep parameter\n",
+        "print(\"Hello\", \"Divya\", sep=\"-\")  # Hello-Divya\n",
+        "print(1, 2, 3, sep=\", \")          # 1, 2, 3\n",
+        "\n",
+        "# Change ending using end parameter (default is newline \\n)\n",
+        "print(\"Hello\", end=\" \")\n",
+        "print(\"World\")                    # Hello World  ← on same line!\n",
+        "\n",
+        "# Print empty line\n",
+        "print()                           # just a blank line\n",
+        "\n",
+        "# Print with tab\n",
+        "print(\"Name\", \"Age\", sep=\"\\t\")    # Name    Age"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lMJ8bzpVUhVk",
+        "outputId": "b8760741-69ce-402c-9533-a50ceb79b85b"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello\n",
+            "Hello Divya\n",
+            "Hello-Divya\n",
+            "1, 2, 3\n",
+            "Hello World\n",
+            "\n",
+            "Name\tAge\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Divya\"\n",
+        "age = 21\n",
+        "cgpa = 8.5\n",
+        "\n",
+        "print(f\"My name is {name} and I am {age} years old\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xJFTdLeSWxyq",
+        "outputId": "bb83f612-9b15-4662-f01a-7652d524e1db"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My name is Divya and I am 21 years old\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = input(\"Enter your age: \")\n",
+        "print(type(age))    # <class 'str'> — even if you typed 21!\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h_IfT4voW1mD",
+        "outputId": "7fe05d27-3150-47a9-d3ce-cfd4467079b3"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your age: div\n",
+            "<class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = input(\"Enter a number: \")\n",
+        "b = input(\"Enter another: \")\n",
+        "print(a + b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aj2eY66mXOz0",
+        "outputId": "a87a0320-f45a-4fbb-a6f1-590a4d4130a9"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 5\n",
+            "Enter another: 3\n",
+            "53\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter a number: \"))\n",
+        "b = int(input(\"Enter another: \"))\n",
+        "print(a + b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FdlmMkISXde5",
+        "outputId": "3772bc8c-4616-45c4-8c0f-706ec44bc455"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 5\n",
+            "Enter another: 3\n",
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Method 1: split()\n",
+        "a, b = input(\"Enter two numbers: \").split()\n",
+        "\n",
+        "\n",
+        "print(a + b)   # 15"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NQGM0xouXiqA",
+        "outputId": "8f147ffd-1658-4906-eea2-a5c33cbb1327"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter two numbers: 5 3\n",
+            "53\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a, b = map(int, input(\"Enter two numbers: \").split())\n",
+        "# Now a = 5, b = 10 (integers!)\n",
+        "print(a + b)   # 15"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BXGeKxPZX1Vt",
+        "outputId": "49427bb0-1589-4556-f703-64e2887bc502"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter two numbers: 5 10\n",
+            "15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "z55csdWHYB8W"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
